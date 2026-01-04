@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # TimescaleDB - Our time-series database
+  timescaledb:
+    image: timescale/timescaledb:latest-pg14
+    container_name: api_monitor_db
+    restart: always
+    environment:
+      POSTGRES_USER: api_monitor
+      POSTGRES_PASSWORD: monitor123
+      POSTGRES_DB: api_monitoring
+    ports:
+      - "5432:5432"
+    volumes:
+      - timescale_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U api_monitor"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Grafana - Our visualization dashboard
+  grafana:
+    image: grafana/grafana:latest
+    container_name: api_monitor_grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin123
+      GF_INSTALL_PLUGINS: ""
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+
+volumes:
+  timescale_data:
+  grafana_data:                    
+
+                
+
+
