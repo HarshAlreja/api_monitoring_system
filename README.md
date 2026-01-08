@@ -120,8 +120,8 @@ python api_pinger_db.py
 
 ### 6. Access Grafana
 - URL: `http://localhost:3000`
-- Username: `admin`
-- Password: `admin123`
+- Username: username
+- Password: password
 
 ---
 
