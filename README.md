@@ -267,37 +267,25 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Your Name** - [@your_twitter](https://twitter.com/your_twitter)
+**Harsh Alreja** - alrejaharsh38@gmail.com
 
-Project Link: [https://github.com/YOUR_USERNAME/api-monitoring-system](https://github.com/YOUR_USERNAME/api-monitoring-system)
+Project Link: [https://github.com/HarshAlreja/api-monitoring-system](https://github.com/HarshAlreja/api-monitoring-system)
 
 ---
 
 ⭐ **If you find this project interesting, please give it a star!** ⭐
 ```
 
-**Save this file!**
 
----
 
-## **STEP 3: CREATE `requirements.txt`**
 
-Create `requirements.txt`:
+
+
+
+
+
+
 ```
-requests==2.31.0
-psycopg2-binary==2.9.9
-pandas==2.1.4
-python-dotenv==1.0.0
-
-# For ML (will add when we get there)
-# scikit-learn==1.3.2
-# prophet==1.1.5
-# statsmodels==0.14.1
-```
-
-**Save this file!**
-
----
 
 ## **STEP 4: CREATE `LICENSE` FILE**
 
