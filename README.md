@@ -324,3 +324,43 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+
+
+APIS=[
+    {
+        'name':'JSONPlaceholder',
+        'url':'https://jsonplaceholder.typicode.com/',
+
+    },
+    {
+        'name':'PokeAPI',
+        'url':'https://pokeapi.co/'
+
+    },
+    {
+        'name':'CatFacts',
+        'url':'https://catfact.ninja/'
+    },
+    
+    {
+        'name': 'IPify',
+        'url': 'https://www.ipify.org/'
+    },
+    {
+        'name': 'RandomUser',
+        'url': 'https://randomuser.me/'
+    },
+    
+    {
+        'name': 'GitHub',
+        'url': 'https://api.github.com'
+    }
+    
+]
+
+
+Grafana Dashboard - ![alt text](image-1.png)
+![alt text](image-2.png)
